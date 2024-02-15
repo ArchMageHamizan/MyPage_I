@@ -55,7 +55,7 @@ class StudentController extends Controller
     public function destroy(string $id)
     {
         $student =$this->$student->find($id);
-        return $student->delete();
+        return $student->delete(); //delete entire row
     }
     // =============================
 }
