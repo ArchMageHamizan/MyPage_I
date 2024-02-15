@@ -29,7 +29,8 @@ class StudentController extends Controller
     // DISPLAY SPECIFIC resource.
     public function show(string $id)
     {
-        return $student=$this->student->find($id);
+       // use this to find other than by id: return $student=$this->student->where('name', $name)->first();
+       return $student=$this->student->find($id);
     }
     // =============================
   
