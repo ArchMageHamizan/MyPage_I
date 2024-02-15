@@ -54,7 +54,7 @@ class StudentController extends Controller
     // DELETE SPECIFIC resource from storage.
     public function destroy(string $id)
     {
-        $student =$this->$student->find($id);
+        $student =$this->student->find($id);
         return $student->delete(); //delete entire row
     }
     // =============================
